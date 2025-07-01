@@ -12,22 +12,23 @@
 </head>
 <body>
   <nav>
-    
-            <span class="logo">ParkIdevs...</span>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutus">ABOUT_US</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                
-                <li><a href="#footer">FOOTER</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                
-            </ul>
-            <button class="nav-btn"><a href="">Get started</a></button>
-        
+  <span class="logo">ParkIdevs...</span>
 
-  </nav>
+  <div class="hamburger" id="hamburger">
+    <i class="bi bi-list"></i>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#aboutus">ABOUT_US</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    <li><a href="#footer">FOOTER</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#experience">EXPERIENCE</a></li>
+  </ul>
+
+  <button class="nav-btn"><a href="">Get started</a></button>
+</nav>
   <header id="home">
     <div class="first-cont">
       <p>Backend Developer || IT Support Specialist</p>
@@ -42,10 +43,7 @@
       <div class="first-btns">
         <button><a href="https://land-page-ruby.vercel.app/" target="_blank">Project</a></button>
         <button><a href="file:///C:/Users/comfo/Downloads/Comfort%20Kunadu%20Serwaa%20Parker_RESUME.pdf" target="_blank">Download CV</a></button>
-        <!-- <a href="#"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
-        <a href="#"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
-        <a href="#"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
-        <a href="#"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a> -->
+       
       </div>
 
     </div>
@@ -90,7 +88,55 @@
 </section>
 
 
- 
+ <section style="padding: 60px 20px; background-color: #fff; font-family: sans-serif;">
+  <div style="text-align: center;">
+    <h2 style="font-size: 2.5em; font-weight: 700; margin-bottom: 10px;">Our Pro Services<span style="color: #f20072;">.</span></h2>
+    <p style="color: #555;">We understand the importance of approaching each work integrally and <br> believe in the power of simple and easy communication</p>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px; gap: 20px;">
+    <div class="service-card">Web Development</div>
+    <div class="service-card">Research & Sketch</div>
+    <div class="service-card">Help & Support</div>
+    <div class="service-card">Open Source</div>
+    <div class="service-card">Responsive Layout</div>
+    <div class="service-card">Community Forum</div>
+    <div class="service-card">Web Development</div>
+    <div class="service-card">Research & Sketch</div>
+    <div class="service-card">Help & Support</div>
+  </div>
+</section>
+
+<style>
+  .service-card {
+    background-color: #f7f7f7;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #000;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+
+  .service-card::after {
+    content: "★";
+    font-size: 1.2em;
+    color: #f20072;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+</style>
+
  
  <section id="aboutus" class="card-sec">
 
